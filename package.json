@@ -1,0 +1,19 @@
+{
+  "name": "multi timer vs single timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run multi\" \"npm run single\" \"index.html\"",
+    "multi": "watchify multiTimer.js -o static/multiTimer.js",
+    "single": "watchify singleTimer.js -o static/singleTimer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.1.0",
+    "precision-timeout-interval": "^4.3.0",
+    "watchify": "^4.0.0"
+  }
+}

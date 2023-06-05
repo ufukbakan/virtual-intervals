@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ib {
+    display: inline-block;
+}
+
+canvas {
+    width: 600px;
+    height: 600px;
+}
